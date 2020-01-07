@@ -1,0 +1,96 @@
+// тк мы к ним обращаемся везде ниже
+@import "utils/fonts"
+@import "utils/vars"
+@import "utils/reset"
+
+html
+  line-height: $mainLineHeight
+  font-size: $mainFontSize
+  color: $mainFontColor
+  height: 100%
+  @media screen and (max-width: $desktopWidth)
+    font-size: 16px
+  @media screen and (max-width: $tableWidth)
+    font-size: 15px
+  @media screen and (max-width: $phoneWidth)
+    font-size: 14px
+
+
+body
+  font-family: $mainFont
+  font-size: $mainFontSize
+  font-weight: $mainFontWeight
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  margin: 0
+  padding: 0
+  background-color: #f7f7f7
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+input, textarea, select, button
+  border: 1px solid $border-base
+
+a
+  text-decoration: none
+
+ul, li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+section, .section
+  position: relative
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  margin: 0 auto
+
+.wrapper-content
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.container
+  width: 100%
+  flex: 0 0 auto
+  position: relative
+  padding 20px 30px
+  margin: 0 auto
+  /*@media screen and (max-width: $smDesktopWidth)
+  @media screen and (max-width: $tableWidth)
+  @media screen and (max-width: $phoneWidth)*/
+
+h1
+  font-weight: bold
+  font-size: 22px
+  line-height: 24px
+  color $mainGray
+
+h2
+  color $supportGray
+  font-size: 11px
+  line-height: 12px
+  font-weight 400
+  padding 5px 0
+
+::-webkit-input-placeholder
+  font-size: 12px
+  color: #8EA4B5
+  transition: $fast
+::-moz-placeholder
+  font-size: 12px
+  color: #8EA4B5
+  transition: $fast
+:-moz-placeholder
+  font-size: 12px
+  color: #8EA4B5
+  transition: $fast
+:-ms-input-placeholder
+  font-size: 12px
+  color: #8EA4B5
+  transition: $fast
+@import "common"

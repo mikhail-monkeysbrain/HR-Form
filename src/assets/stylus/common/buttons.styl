@@ -1,0 +1,54 @@
+.btn
+  height: 36px
+  padding: 0 16px
+  display inline-flex
+  justify-content center
+  align-items center
+  font-size: 11px
+  font-weight 600
+  line-height 13px
+  text-transform uppercase
+  box-sizing: border-box
+  border-radius: 3px
+  transition: $middle
+  cursor pointer
+
+  &--middle
+    height 26px
+    padding 0 9px
+    font-size: 10px
+
+  svg,
+  span
+    width 12px
+    font-size: 24px
+    margin-right 6px
+  svg
+    path
+      transition: $middle
+
+  &--transparent
+    background: #FFFFFF
+    border: 1px solid #DBE4E7
+    color #475364
+    &:hover
+      border: 1px solid #475364
+      color: #fff
+      background #475364
+      svg
+        path
+          fill #fff !important
+
+  &--primary
+    background: #386BF2
+    border: 1px solid #386BF2
+    color #fff
+    transition: $middle
+    &:hover
+      background #ffffff
+      color #386BF2
+
+  &--fluid
+    width 100%
+    flex-shrink: 1
+    flex-grow: 1
